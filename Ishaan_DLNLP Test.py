@@ -1,8 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 input tensorflow
-
 import tensorflow
 
 from IPython.core.interactiveshell import InteractiveShell
