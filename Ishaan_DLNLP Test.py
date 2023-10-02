@@ -124,14 +124,12 @@ validation_generator = val_dtgen.flow_from_directory(
 
 start = time.time()
 history = model.fit_generator(
-                              # First argument is always data generator
                               generator = train_generator,
-                              # How many batches per epoch?
-                              # Can be any number as generator loops indefinitely
+                              
                               steps_per_epoch=nb_train_samples // batch_size,
                               # No of epochs
                               epochs=epochs,
-                              # Get validation data from validation generator
+                              #validation data from validation generator
                               validation_data=validation_generator,
                               verbose = 1,
                               validation_steps=nb_validation_samples // batch_size
